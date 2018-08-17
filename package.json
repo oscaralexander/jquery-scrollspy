@@ -1,0 +1,48 @@
+{
+  "author": {
+    "name": "Alexander Griffioen",
+    "email": "mail@oscaralexander.com",
+    "url": "https://github.com/oscaralexander"
+  },
+  "bugs": {
+    "url": "https://github.com/oscaralexander/jquery-scrollspy/issues"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "description": "jQuery plugin for accurate scroll position and direction tracking.",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-minify": "^0.4.3",
+    "eslint": "^5.3.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "npx": "^10.2.0"
+  },
+  "homepage": "https://github.com/oscaralexander/jquery-scrollspy",
+  "keywords": [
+    "es6",
+    "jquery",
+    "parallax",
+    "plugin",
+    "scroll",
+    "scrolling",
+    "scrollspy"
+  ],
+  "license": "MIT",
+  "main": "./src/jquery.scrollspy.js",
+  "name": "jquery-scrollspy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscaralexander/jquery-scrollspy.git"
+  },
+  "scripts": {
+    "build": "npx babel ./src/jquery-scrollspy.js --out-file ./dist/jquery-scrollspy.min.js",
+    "build --production": "BABEL_ENV=production npm run build",
+    "lint": "eslint src"
+  },
+  "version": "1.0.0"
+}
